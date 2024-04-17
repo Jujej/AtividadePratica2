@@ -1,15 +1,10 @@
 public abstract class Funcionario {
+
+    // atributos
     private String nome;
     private int matricula;
 
-    public Funcionario() {
-    }
-
-    public Funcionario(String nome, int matricula) {
-        this.nome = nome;
-        this.matricula = matricula;
-    }
-
+    //getters e setters
     public String getNome() {
         return nome;
     }
@@ -26,6 +21,16 @@ public abstract class Funcionario {
         this.matricula = matricula;
     }
 
+    // construtores
+    public Funcionario() {
+    }
+
+    public Funcionario(String nome, int matricula) {
+        this.nome = nome;
+        this.matricula = matricula;
+    }
+
+    // to string
     @Override
     public String toString() {
         String txt = "Funcionario [nome=" + nome + ", matricula=" + matricula + "]";
