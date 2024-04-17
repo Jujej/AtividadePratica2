@@ -50,16 +50,25 @@ public class Sistema {
                     temp.setMatricula(f.getMatricula());
                     ((Diretor) temp).setAreaDeAtuacao(((Diretor) f).getAreaDeAtuacao());
                 }
-                // Você pode adicionar mais blocos 'else if' para outros tipos de funcionários, se necessário
-                return; // Encerra o método após a edição do funcionário
+                return;
             }
         }
-        // Se chegou aqui, significa que o funcionário com o nome especificado não foi encontrado na lista
+        // Se chegou aqui, significa que o funcionário com o nome especificado não foi
+        // encontrado na lista
         System.out.println("Funcionário com nome " + nome + " não encontrado.");
     }
 
-    private static void excluirFuncionario() {
-        // Implemente a lógica para excluir umarFuncionario
+    private static boolean excluirFuncionario(String nome) {
+
+        for (Funcionario temp : list) {
+            if (temp.getNome().equalsIgnoreCase(nome)) {
+                list.remove(temp);
+                return true;
+            }
+        }
+
+        return false;
+
     }
 
     private static void listarFuncionarios() {
