@@ -20,7 +20,8 @@ public class Coordenador extends Funcionario {
     
     @Override
     public String toString() {
-        return "Coordenador [departamento=" + departamento + ", toString()=" + super.toString() + "]";
+        String txt = "Coordenador [departamento=" + departamento + ", toString()=" + super.toString() + "]";
+        return txt;
     }
     
 }

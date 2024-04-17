@@ -28,6 +28,7 @@ public abstract class Funcionario {
 
     @Override
     public String toString() {
-        return "Funcionario [nome=" + nome + ", matricula=" + matricula + "]";
+        String txt = "Funcionario [nome=" + nome + ", matricula=" + matricula + "]";
+        return txt;
     }
 }

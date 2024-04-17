@@ -20,6 +20,7 @@ public class Professor extends Funcionario {
     
     @Override
     public String toString() {
-        return "Professor [materia=" + materia + ", toString()=" + super.toString() + "]";
+        String txt = "Professor [materia=" + materia + ", toString()=" + super.toString() + "]";
+        return txt;
     }
 }
