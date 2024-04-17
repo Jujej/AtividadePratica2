@@ -4,11 +4,11 @@ public class Coordenador extends Funcionario {
     private String departamento;
 
     //getters e setters
-    public String getdepartamento() {
+    public String getDepartamento() {
         return departamento;
     }
     
-    public void setdepartamento(String departamento) {
+    public void setDepartamento(String departamento) {
         this.departamento = departamento;
     }
 
